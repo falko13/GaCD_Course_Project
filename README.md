@@ -23,9 +23,8 @@ Schematics for script
 8.To aid readability we replace some symbols in feature column names, particulary it removes "()" and replace "-" with "_". i am aware that according to lecture notes all letter should be lower case and more cleraly describe the variables, but in this case i consider partially uppercase and cryptic names more suitable otherwise it could be not readable.
 9. As the next step script provides grouping by subject and activity, then summarises features numeric data for each of 66 col by its mean. as the result of the step 9 we have tidy data.frame consisted of 180 rows(observations) and 68 columns(66 feature measurments and 2 descriptive variables identifying subjects and activity). the final tidy data meets all the principles to be considered as tidy: Each variable should be in one column, Each different observation of that variable should be in a different row, There should be one table for each "kind" of variable
 10. finally script writes tidy data.frame to the txt file. one can read the file back to R by running following code: 
-```
-address <- ""
-address <- sub("^https", "http", address)
-data <- read.table(url(address), header = TRUE) 
-View(data)
-```  
+        address <- ""
+        address <- sub("^https", "http", address)
+        data <- read.table(url(address), header = TRUE) 
+        View(data)
+ 
