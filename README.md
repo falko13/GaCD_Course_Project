@@ -13,7 +13,7 @@ The repository includes the following files:
 
 Schematics for script
 ===========
-1. loads all libraries required. Those are utils and dplyr libraries
+1. loads all libraries required. Those are "utils" and "dplyr" libraries
 2. creates directory to store original raw data
 3. downloads file throuhg link delivered in project description, extracts zip into created dir
 4. reads into separate R data.frames 8 txt-files with training/test data sets and ids/labels for those sets.
