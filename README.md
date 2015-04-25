@@ -8,7 +8,7 @@ The repository includes the following files:
 
 * "Readme.md" - current file, describing repository and how all of the scripts work
 * "tidy_data.txt" - final tidy data set 
-* "GaCD_Course_project_script" - R script which was used to create final tidy data set 
+* "GaCD_Course_project_script.R" - R script which was used to create final tidy data set 
 * "Codebook.md" -  code book describing each variable and its values in the final tidy data set 
 
 Schematics for script
