@@ -64,91 +64,86 @@ Check README.md for details on the matter
 
 Codebook
 ===========
-|#|	NAME | Description |Binning|TYPE | R Type  | Units  | 
-|:---:|:---|:---:|:---:|:---:|:---:|:---:|
-|1|  id_subject | ID of a subject | 1..30  | Continious  |  INT |ID |
-|2|  name_activity | name of activity | -  |  Categorical | FACTOR  | - |
+Following is related to varibales 3:68 of the Codebook:
+
+1. '-XYZ' marks to variable name is used to denote 3-axial signals in the X, Y and Z directions.
+2. prefix 't' to denote time, prefix 'f' to denote Frequency
+3. prefix 'std' marks standart deviation estimates, 'mean' - mean estimates 
+4. each variable was aggregated by "id_subject" and "name_activity", and summarized by mean function
+
+|#|	NAME | Description |Binning|TYPE | R Type  |
+|:---:|:---|:-----------:|:---:|:---:|:---:|
+|1|  id_subject | ID of a subject | 1..30  | Continious  |  INT |
+|2|  name_activity | name of activity | -  |  Categorical | FACTOR  | 
 ||||WALKING|
 ||||WALKING_DOWNSTAIRS|
 ||||WALKING_UPSTAIRS|
 ||||LAYING|
 ||||SITTING|
 ||||STANDING|
-|3|  tBodyAcc_std_X |   |  -1..1 | Continious  | NUM  | |
-|4| tBodyAcc_std_Y  |   |  -1..1 | Continious  | NUM  | |
-|5| tBodyAcc_std_Z  |   |  -1..1 | Continious  | NUM  | |
-|6|  tGravityAcc_std_X |   |  -1..1 | Continious  | NUM  | |
-|7| tGravityAcc_std_Y  |   |  -1..1 | Continious  | NUM  | |
-|8| tGravityAcc_std_Z  |   |  -1..1 | Continious  | NUM  | |
-|9| tBodyAccJerk_std_X  |   |  -1..1 | Continious  | NUM  | |
-|10| tBodyAccJerk_std_Y  |   |  -1..1 | Continious  | NUM  | |
-|11|  tBodyAccJerk_std_Z |   |  -1..1 | Continious  | NUM  | |
-|12| tBodyGyro_std_X  |   |  -1..1 | Continious  | NUM  | |
-|13|  tBodyGyro_std_Y |   |  -1..1 | Continious  | NUM  | |
-|14|  tBodyGyro_std_Z |   |  -1..1 | Continious  | NUM  | |
-|15| tBodyGyroJerk_std_X  |   |  -1..1 | Continious  | NUM  | |
-|16| tBodyGyroJerk_std_Y  |   |  -1..1 | Continious  | NUM  | |
-|17| tBodyGyroJerk_std_Z  |   |  -1..1 | Continious  | NUM  | |
-|18|  tBodyAccMag_std |   |  -1..1 | Continious  | NUM  | |
-|19|  tGravityAccMag_std |   |  -1..1 | Continious  | NUM  | |
-|20| tBodyAccJerkMag_std  |   |  -1..1 | Continious  | NUM  | |
-|21| tBodyGyroMag_std  |   |  -1..1 | Continious  | NUM  | |
-|22| tBodyGyroJerkMag_std  |   |  -1..1 | Continious  | NUM  | |
-|23| fBodyAcc_std_X  |   |  -1..1 | Continious  | NUM  | |
-|24| fBodyAcc_std_Y  |   |  -1..1 | Continious  | NUM  | |
-|25|  fBodyAcc_std_Z |   |  -1..1 | Continious  | NUM  | |
-|26| fBodyAccJerk_std_X  |   |  -1..1 | Continious  | NUM  | |
-|27|  fBodyAccJerk_std_Y |   |  -1..1 | Continious  | NUM  | |
-|28|  fBodyGyro_std_X |   |  -1..1 | Continious  | NUM  | |
-|29|  fBodyGyro_std_Y |   |  -1..1 | Continious  | NUM  | |
-|30|  fBodyGyro_std_Z |   |  -1..1 | Continious  | NUM  | |
-|31| fBodyAccMag_std  |   |  -1..1 | Continious  | NUM  | |
-|32|  fBodyBodyAccJerkMag_std |   |  -1..1 | Continious  | NUM  | |
-|33| fBodyBodyGyroMag_std  |   |  -1..1 | Continious  | NUM  | |
-|34| fBodyBodyGyroJerkMag_std  |   |  -1..1 | Continious  | NUM  | |
-|35| tBodyAcc_mean_X  |   |  -1..1 | Continious  | NUM  | |
-|36|  tBodyAcc_mean_Y |   |  -1..1 | Continious  | NUM  | |
-|37|  tBodyAcc_mean_Z |   |  -1..1 | Continious  | NUM  | |
-|38| tGravityAcc_mean_X  |   |  -1..1 | Continious  | NUM  | |
-|39| tGravityAcc_mean_Y  |   |  -1..1 | Continious  | NUM  | |
-|40| tGravityAcc_mean_Z  |   |  -1..1 | Continious  | NUM  | |
-|41| tBodyAccJerk_mean_X  |   |  -1..1 | Continious  | NUM  | |
-|42|  tBodyAccJerk_mean_Y |   |  -1..1 | Continious  | NUM  | |
-|43|  tBodyAccJerk_mean_Z |   |  -1..1 | Continious  | NUM  | |
-|44| tBodyGyro_mean_X  |   |  -1..1 | Continious  | NUM  | |
-|45|  tBodyGyro_mean_Y |   |  -1..1 | Continious  | NUM  | |
-|46|  tBodyGyro_mean_Z |   |  -1..1 | Continious  | NUM  | |
-|47| tBodyGyroJerk_mean_X  |   |  -1..1 | Continious  | NUM  | |
-|48| tBodyGyroJerk_mean_Y  |   |  -1..1 | Continious  | NUM  | |
-|49|  tBodyGyroJerk_mean_Z |   |  -1..1 | Continious  | NUM  | |
-|50|  tBodyAccMag_mean |   |  -1..1 | Continious  | NUM  | |
-|51|  tGravityAccMag_mean |   |  -1..1 | Continious  | NUM  | |
-|52| tBodyAccJerkMag_mean  |   |  -1..1 | Continious  | NUM  | |
-|53|  tBodyGyroMag_mean |   |  -1..1 | Continious  | NUM  | |
-|54| tBodyGyroJerkMag_mean  |   |  -1..1 | Continious  | NUM  | |
-|55|  fBodyAcc_mean_X |   |  -1..1 | Continious  | NUM  | |
-|56| fBodyAcc_mean_Y  |   |  -1..1 | Continious  | NUM  | |
-|57| fBodyAcc_mean_Z  |   |  -1..1 | Continious  | NUM  | |
-|58| fBodyAccJerk_mean_X  |   |  -1..1 | Continious  | NUM  | |
-|59| fBodyAccJerk_mean_Y  |   |  -1..1 | Continious  | NUM  | |
-|60|  fBodyAccJerk_mean_Z |   |  -1..1 | Continious  | NUM  | |
-|61| fBodyGyro_mean_X  |   |  -1..1 | Continious  | NUM  | |
-|62|  fBodyGyro_mean_Y |   |  -1..1 | Continious  | NUM  | |
-|63|  fBodyGyro_mean_Z |   |  -1..1 | Continious  | NUM  | |
-|64| fBodyAccMag_mean  |   |  -1..1 | Continious  | NUM  | |
-|65| fBodyBodyAccJerkMag_mean  |   |  -1..1 | Continious  | NUM  | |
-|66| fBodyBodyGyroMag_mean  |   |  -1..1 | Continious  | NUM  | |
-|67|  fBodyBodyGyroJerkMag_mean |   |  -1..1 | Continious  | NUM  | |
-|68|  fBodyAccJerk_std_Z |   |  -1..1 | Continious  | NUM  | |
-
-
-
-It's very similar to a Statistical Analysis Plan, actually.
-
-Setup, there is a dogwalking business. It wants to analyze its work.
-
-Raw data is: name of dog, address of owner, time walked, date walked, size of dog (small, medium, or large), health of dog (well or sick) on that date and time, comments, and pay.
-
-The business wants to assign ID# to the dogs, and codewords to the address to make this data anonymous. There isn't anything to do to the comments--since free text is all over the place.
-
-Codebook: The dog's name was transformed into an IDNumber (unique) (1-50), the address was transformed into a factor, OwnerName (levels Alice, Bob, Charlie, Deborah, Ernest and Fred), time and date walked were counted to make WalksPerWeek1, WalksPerWeek2, and WalksPerWeek3. Week1 begins at 00:01UTC on July1, 2014, Week2 begins at 00:01UTC on July8, 2014, Week3 begins at 00:01UTC on July15, 2014. Health was summarized as HealthWeek1, HealthWeek2, and HealthWeek3. It is a factor with two levels, Well and Sick. If the dog was sick at any walk during that week, dog was marked sick, else dog was marked well. Dog Size was converted into a factor: Large, Medium and Small are the levels. Comments are dropped. Pay is transformed into PayWeek1, PayWeek2, PayWeek3, which is a factor that has two levels (Yes, and No) for correct pay paid during that week.
+|3|  tBodyAcc_std_X | body acceleration |  -1..1 | Continious  | NUM  | |
+|4| tBodyAcc_std_Y  | body acceleration  |  -1..1 | Continious  | NUM  | |
+|5| tBodyAcc_std_Z  | body acceleration  |  -1..1 | Continious  | NUM  | |
+|6|  tGravityAcc_std_X | gravity acceleration  |  -1..1 | Continious  | NUM  | |
+|7| tGravityAcc_std_Y  |  gravity acceleration |  -1..1 | Continious  | NUM  | |
+|8| tGravityAcc_std_Z  |   gravity acceleration |  -1..1 | Continious  | NUM  | |
+|9| tBodyAccJerk_std_X  | Jerk signals for body acceleration  |  -1..1 | Continious  | NUM  | |
+|10| tBodyAccJerk_std_Y  |  Jerk signals for body acceleration |  -1..1 | Continious  | NUM  | |
+|11|  tBodyAccJerk_std_Z | Jerk signals for body acceleration  |  -1..1 | Continious  | NUM  | |
+|12| tBodyGyro_std_X  |  gyroscope signal |  -1..1 | Continious  | NUM  | |
+|13|  tBodyGyro_std_Y |  gyroscope signal  |  -1..1 | Continious  | NUM  | |
+|14|  tBodyGyro_std_Z |   gyroscope signal |  -1..1 | Continious  | NUM  | |
+|15| tBodyGyroJerk_std_X  |  Jerk signals for gravity acceleration |  -1..1 | Continious  | NUM  | |
+|16| tBodyGyroJerk_std_Y  |  Jerk signals for gravity acceleration  |  -1..1 | Continious  | NUM  | |
+|17| tBodyGyroJerk_std_Z  | Jerk signals for gravity acceleration   |  -1..1 | Continious  | NUM  | |
+|18|  tBodyAccMag_std | magnitude for body acceleration signal  |  -1..1 | Continious  | NUM  | |
+|19|  tGravityAccMag_std |  magnitude for gravity acceleration Jerk signal  |  -1..1 | Continious  | NUM  | |
+|20| tBodyAccJerkMag_std  | magnitude for body acceleration Jerk signal  |  -1..1 | Continious  | NUM  | |
+|21| tBodyGyroMag_std  | magnitude for gyroscope signal |  -1..1 | Continious  | NUM  | |
+|22| tBodyGyroJerkMag_std  |  magnitude for gyroscope Jerk signal |  -1..1 | Continious  | NUM  | |
+|23| fBodyAcc_std_X  |   Fast Fourier Transform for body acceleration |  -1..1 | Continious  | NUM  | |
+|24| fBodyAcc_std_Y  |  Fast Fourier Transform for body acceleration |  -1..1 | Continious  | NUM  | |
+|25|  fBodyAcc_std_Z |  Fast Fourier Transform for body acceleration |  -1..1 | Continious  | NUM  | |
+|26| fBodyAccJerk_std_X  | Fast Fourier Transform for body acceleration  |  -1..1 | Continious  | NUM  | |
+|27|  fBodyAccJerk_std_Y | Jerk signals of Fast Fourier Transform for body acceleration  |  -1..1 | Continious  | NUM  | |
+|28|  fBodyGyro_std_X | Fast Fourier gyroscope signal  |  -1..1 | Continious  | NUM  | |
+|29|  fBodyGyro_std_Y |  Fast Fourier gyroscope signal |  -1..1 | Continious  | NUM  | |
+|30|  fBodyGyro_std_Z | Fast Fourier gyroscope signal  |  -1..1 | Continious  | NUM  | |
+|31| fBodyAccMag_std  | magnitude of Fast Fourier gyroscope signal |  -1..1 | Continious  | NUM  | |
+|32|  fBodyBodyAccJerkMag_std | Fast Fourier Transform of magnitude for body acceleration Jerk signal  |  -1..1 | Continious  | NUM  | |
+|33| fBodyBodyGyroMag_std  | magnitude of  Fast Fourier gyroscope signal |  -1..1 | Continious  | NUM  | |
+|34| fBodyBodyGyroJerkMag_std  | magnitude of  Fast Fourier gyroscope Jerk signal  |  -1..1 | Continious  | NUM  | |
+|35| tBodyAcc_mean_X  |  body acceleration |  -1..1 | Continious  | NUM  | |
+|36|  tBodyAcc_mean_Y |  body acceleration |  -1..1 | Continious  | NUM  | |
+|37|  tBodyAcc_mean_Z |  body acceleration |  -1..1 | Continious  | NUM  | |
+|38| tGravityAcc_mean_X  |  gravity acceleration |  -1..1 | Continious  | NUM  | |
+|39| tGravityAcc_mean_Y  |  gravity acceleration |  -1..1 | Continious  | NUM  | |
+|40| tGravityAcc_mean_Z  | gravity acceleration  |  -1..1 | Continious  | NUM  | |
+|41| tBodyAccJerk_mean_X  | Jerk signals for body acceleration  |  -1..1 | Continious  | NUM  | |
+|42|  tBodyAccJerk_mean_Y |  Jerk signals for body acceleration |  -1..1 | Continious  | NUM  | |
+|43|  tBodyAccJerk_mean_Z |  Jerk signals for body acceleration |  -1..1 | Continious  | NUM  | |
+|44| tBodyGyro_mean_X  |  gyroscope signal  |  -1..1 | Continious  | NUM  | |
+|45|  tBodyGyro_mean_Y |  gyroscope signal  |  -1..1 | Continious  | NUM  | |
+|46|  tBodyGyro_mean_Z |   gyroscope signal |  -1..1 | Continious  | NUM  | |
+|47| tBodyGyroJerk_mean_X  | Jerk signals for gravity acceleration  |  -1..1 | Continious  | NUM  | |
+|48| tBodyGyroJerk_mean_Y  |  Jerk signals for gravity acceleration |  -1..1 | Continious  | NUM  | |
+|49|  tBodyGyroJerk_mean_Z | Jerk signals for gravity acceleration  |  -1..1 | Continious  | NUM  | |
+|50|  tBodyAccMag_mean |  magnitude for body acceleration signal  |  -1..1 | Continious  | NUM  | |
+|51|  tGravityAccMag_mean |  magnitude for gravity acceleration Jerk signal |  -1..1 | Continious  | NUM  | |
+|52| tBodyAccJerkMag_mean  |  magnitude for body acceleration Jerk signal |  -1..1 | Continious  | NUM  | |
+|53|  tBodyGyroMag_mean |  magnitude for gyroscope signal  |  -1..1 | Continious  | NUM  | |
+|54| tBodyGyroJerkMag_mean  |  magnitude for gyroscope Jerk signal |  -1..1 | Continious  | NUM  | |
+|55|  fBodyAcc_mean_X |  Fast Fourier Transform for body acceleration |  -1..1 | Continious  | NUM  | |
+|56| fBodyAcc_mean_Y  |  Fast Fourier Transform for body acceleration |  -1..1 | Continious  | NUM  | |
+|57| fBodyAcc_mean_Z  |  Fast Fourier Transform for body acceleration |  -1..1 | Continious  | NUM  | |
+|58| fBodyAccJerk_mean_X  | Jerk signals of Fast Fourier Transform for body acceleration  |  -1..1 | Continious  | NUM  | |
+|59| fBodyAccJerk_mean_Y  |  Jerk signals of Fast Fourier Transform for body acceleration |  -1..1 | Continious  | NUM  | |
+|60|  fBodyAccJerk_mean_Z |  Jerk signals of Fast Fourier Transform for body acceleration |  -1..1 | Continious  | NUM  | |
+|61| fBodyGyro_mean_X  |  Fast Fourier gyroscope signal  |  -1..1 | Continious  | NUM  | |
+|62|  fBodyGyro_mean_Y |  Fast Fourier gyroscope signal  |  -1..1 | Continious  | NUM  | |
+|63|  fBodyGyro_mean_Z |   Fast Fourier gyroscope signal |  -1..1 | Continious  | NUM  | |
+|64| fBodyAccMag_mean  | magnitude of Fast Fourier gyroscope signal  |  -1..1 | Continious  | NUM  | |
+|65| fBodyBodyAccJerkMag_mean  |  Fast Fourier Transform of magnitude for body acceleration Jerk signal |  -1..1 | Continious  | NUM  | |
+|66| fBodyBodyGyroMag_mean  |  magnitude of  Fast Fourier gyroscope signal |  -1..1 | Continious  | NUM  | |
+|67|  fBodyBodyGyroJerkMag_mean |  magnitude of  Fast Fourier gyroscope Jerk signal |  -1..1 | Continious  | NUM  | |
+|68|  fBodyAccJerk_std_Z |  Jerk signals of Fast Fourier Transform for body acceleration |  -1..1 | Continious  | NUM  | |
