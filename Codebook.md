@@ -64,30 +64,84 @@ Check README.md for details on the matter
 
 Codebook
 ===========
-|	NAME | Description |Binning|TYPE | R Type  | Units  | 
-|---|---|---|---|---|---|
-|  id_subject | ID of a subject | 1..30  | Continious  |  INT |ID |
-|  name_activity | name of activity | -  |  Categorical | FACTOR  | - |
-|||WALKING|
-|||WALKING_DOWNSTAIRS|
-|||WALKING_UPSTAIRS|
-|||LAYING|
-|||SITTING|
-|||STANDING|
-|  tBodyAcc_std_X |   |  -1..1 | Continious  | NUM  | |
-|   |   |  -1..1 | Continious  | NUM  | |
-|   |   |  -1..1 | Continious  | NUM  | |
-|   |   |  -1..1 | Continious  | NUM  | |
-|   |   |  -1..1 | Continious  | NUM  | |
-|   |   |  -1..1 | Continious  | NUM  | |
-|   |   |  -1..1 | Continious  | NUM  | |
-|   |   |  -1..1 | Continious  | NUM  | |
-|   |   |  -1..1 | Continious  | NUM  | |
-|   |   |  -1..1 | Continious  | NUM  | |
-|   |   |  -1..1 | Continious  | NUM  | |
-|   |   |  -1..1 | Continious  | NUM  | |
-|   |   |  -1..1 | Continious  | NUM  | |
-|   |   |  -1..1 | Continious  | NUM  | |
+|#|	NAME | Description |Binning|TYPE | R Type  | Units  | 
+|:---:|:---|:---:|:---:|:---:|:---:|:---:|
+|1|  id_subject | ID of a subject | 1..30  | Continious  |  INT |ID |
+|2|  name_activity | name of activity | -  |  Categorical | FACTOR  | - |
+||||WALKING|
+||||WALKING_DOWNSTAIRS|
+||||WALKING_UPSTAIRS|
+||||LAYING|
+||||SITTING|
+||||STANDING|
+|3|  tBodyAcc_std_X |   |  -1..1 | Continious  | NUM  | |
+|4| tBodyAcc_std_Y  |   |  -1..1 | Continious  | NUM  | |
+|5| tBodyAcc_std_Z  |   |  -1..1 | Continious  | NUM  | |
+|6|  tGravityAcc_std_X |   |  -1..1 | Continious  | NUM  | |
+|7| tGravityAcc_std_Y  |   |  -1..1 | Continious  | NUM  | |
+|8| tGravityAcc_std_Z  |   |  -1..1 | Continious  | NUM  | |
+|9| tBodyAccJerk_std_X  |   |  -1..1 | Continious  | NUM  | |
+|10| tBodyAccJerk_std_Y  |   |  -1..1 | Continious  | NUM  | |
+|11|  tBodyAccJerk_std_Z |   |  -1..1 | Continious  | NUM  | |
+|12| tBodyGyro_std_X  |   |  -1..1 | Continious  | NUM  | |
+|13|  tBodyGyro_std_Y |   |  -1..1 | Continious  | NUM  | |
+|14|  tBodyGyro_std_Z |   |  -1..1 | Continious  | NUM  | |
+|15| tBodyGyroJerk_std_X  |   |  -1..1 | Continious  | NUM  | |
+|16| tBodyGyroJerk_std_Y  |   |  -1..1 | Continious  | NUM  | |
+|17| tBodyGyroJerk_std_Z  |   |  -1..1 | Continious  | NUM  | |
+|18|  tBodyAccMag_std |   |  -1..1 | Continious  | NUM  | |
+|19|  tGravityAccMag_std |   |  -1..1 | Continious  | NUM  | |
+|20| tBodyAccJerkMag_std  |   |  -1..1 | Continious  | NUM  | |
+|21| tBodyGyroMag_std  |   |  -1..1 | Continious  | NUM  | |
+|22| tBodyGyroJerkMag_std  |   |  -1..1 | Continious  | NUM  | |
+|23| fBodyAcc_std_X  |   |  -1..1 | Continious  | NUM  | |
+|24| fBodyAcc_std_Y  |   |  -1..1 | Continious  | NUM  | |
+|25|  fBodyAcc_std_Z |   |  -1..1 | Continious  | NUM  | |
+|26| fBodyAccJerk_std_X  |   |  -1..1 | Continious  | NUM  | |
+|27|  fBodyAccJerk_std_Y |   |  -1..1 | Continious  | NUM  | |
+|28|  fBodyGyro_std_X |   |  -1..1 | Continious  | NUM  | |
+|29|  fBodyGyro_std_Y |   |  -1..1 | Continious  | NUM  | |
+|30|  fBodyGyro_std_Z |   |  -1..1 | Continious  | NUM  | |
+|31| fBodyAccMag_std  |   |  -1..1 | Continious  | NUM  | |
+|32|  fBodyBodyAccJerkMag_std |   |  -1..1 | Continious  | NUM  | |
+|33| fBodyBodyGyroMag_std  |   |  -1..1 | Continious  | NUM  | |
+|34| fBodyBodyGyroJerkMag_std  |   |  -1..1 | Continious  | NUM  | |
+|35| tBodyAcc_mean_X  |   |  -1..1 | Continious  | NUM  | |
+|36|  tBodyAcc_mean_Y |   |  -1..1 | Continious  | NUM  | |
+|37|  tBodyAcc_mean_Z |   |  -1..1 | Continious  | NUM  | |
+|38| tGravityAcc_mean_X  |   |  -1..1 | Continious  | NUM  | |
+|39| tGravityAcc_mean_Y  |   |  -1..1 | Continious  | NUM  | |
+|40| tGravityAcc_mean_Z  |   |  -1..1 | Continious  | NUM  | |
+|41| tBodyAccJerk_mean_X  |   |  -1..1 | Continious  | NUM  | |
+|42|  tBodyAccJerk_mean_Y |   |  -1..1 | Continious  | NUM  | |
+|43|  tBodyAccJerk_mean_Z |   |  -1..1 | Continious  | NUM  | |
+|44| tBodyGyro_mean_X  |   |  -1..1 | Continious  | NUM  | |
+|45|  tBodyGyro_mean_Y |   |  -1..1 | Continious  | NUM  | |
+|46|  tBodyGyro_mean_Z |   |  -1..1 | Continious  | NUM  | |
+|47| tBodyGyroJerk_mean_X  |   |  -1..1 | Continious  | NUM  | |
+|48| tBodyGyroJerk_mean_Y  |   |  -1..1 | Continious  | NUM  | |
+|49|  tBodyGyroJerk_mean_Z |   |  -1..1 | Continious  | NUM  | |
+|50|  tBodyAccMag_mean |   |  -1..1 | Continious  | NUM  | |
+|51|  tGravityAccMag_mean |   |  -1..1 | Continious  | NUM  | |
+|52| tBodyAccJerkMag_mean  |   |  -1..1 | Continious  | NUM  | |
+|53|  tBodyGyroMag_mean |   |  -1..1 | Continious  | NUM  | |
+|54| tBodyGyroJerkMag_mean  |   |  -1..1 | Continious  | NUM  | |
+|55|  fBodyAcc_mean_X |   |  -1..1 | Continious  | NUM  | |
+|56| fBodyAcc_mean_Y  |   |  -1..1 | Continious  | NUM  | |
+|57| fBodyAcc_mean_Z  |   |  -1..1 | Continious  | NUM  | |
+|58| fBodyAccJerk_mean_X  |   |  -1..1 | Continious  | NUM  | |
+|59| fBodyAccJerk_mean_Y  |   |  -1..1 | Continious  | NUM  | |
+|60|  fBodyAccJerk_mean_Z |   |  -1..1 | Continious  | NUM  | |
+|61| fBodyGyro_mean_X  |   |  -1..1 | Continious  | NUM  | |
+|62|  fBodyGyro_mean_Y |   |  -1..1 | Continious  | NUM  | |
+|63|  fBodyGyro_mean_Z |   |  -1..1 | Continious  | NUM  | |
+|64| fBodyAccMag_mean  |   |  -1..1 | Continious  | NUM  | |
+|65| fBodyBodyAccJerkMag_mean  |   |  -1..1 | Continious  | NUM  | |
+|66| fBodyBodyGyroMag_mean  |   |  -1..1 | Continious  | NUM  | |
+|67|  fBodyBodyGyroJerkMag_mean |   |  -1..1 | Continious  | NUM  | |
+|68|  fBodyAccJerk_std_Z |   |  -1..1 | Continious  | NUM  | |
+
+
 
 It's very similar to a Statistical Analysis Plan, actually.
 
