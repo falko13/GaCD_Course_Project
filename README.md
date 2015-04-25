@@ -24,7 +24,7 @@ Schematics for script
 9. As the next step script provides grouping by subject and activity, then summarises features numeric data for each of 66 col by its mean. as the result of the step 9 we have tidy data.frame consisted of 180 rows(observations) and 68 columns(66 feature measurments and 2 descriptive variables identifying subjects and activity). the final tidy data meets all the principles to be considered as tidy: Each variable should be in one column, Each different observation of that variable should be in a different row, There should be one table for each "kind" of variable
 10. finally script writes tidy data.frame to the txt file. one can read the file back to R by running following code: 
 ```        
-address <- ""
+address <- "https://s3.amazonaws.com/coursera-uploads/user-297948b4d33d1a7a16f968b7/973500/asst-3/c74013f0eaf511e4a9fe3f0549aedea4.txt"
 address <- sub("^https", "http", address)
 data <- read.table(url(address), header = TRUE) 
 View(data)
